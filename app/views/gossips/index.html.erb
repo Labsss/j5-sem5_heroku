@@ -1,14 +1,16 @@
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Derniers ragôts !</h1>
-    <% if logged_in? %>
-      <h1 class="display-6">Bienvenue <%= current_user.email %> ! </h1>
+<div class="jumbotron" style="background-image: url(https://www.geecko.net/wp-content/uploads/2013/04/savoir-ragot.jpeg);">
+  <h1 class="display-12 text-white font-weight-bold text-center"></h1>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-4 text-dark text-center">Derniers ragôts !</h1><br/>
+  <% if logged_in? %>
+      <h3 class="display-6 text-center">Bienvenue <%= current_user.email %> ! </h3>
     <% else %>
-      <h1 class="display-6">Bienvenue ! </h1>
-    <% end %>  
-    <p class="lead">Regardez ce qui se dit sur vous...</p>
-  </div>
+      <h1 class="display-6 text-center">Bienvenue ! </h1>
+    <% end %>
+    <h5 class="display-12 text-dark text-center">Regardez ce qui se dit sur vous...</h5>
 </div>
 
 <%#= link_to "Nouveau potin", new_gossip_path, class: "btn btn-secondary bg-info'" %>
